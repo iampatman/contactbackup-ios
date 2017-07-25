@@ -55,13 +55,16 @@ class ViewController: UIViewController {
 			print(self.contacts!.count)
 			
 		} catch is NSError {
-			
+			print("Cant fetch contacts")
 		}
 
 	}
 	
 	
 	@IBAction func exportBtnClicked(){
+		guard (self.contacts != nil) else {
+			return;
+		}
 		exportToCSV(contacts: self.contacts!)
 	}
 	
