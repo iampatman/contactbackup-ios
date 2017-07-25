@@ -21,7 +21,7 @@ class ViewController: UIViewController {
 	}
 	
 	override func viewDidAppear(_ animated: Bool) {
-		checkPermission()
+
 	}
 
 	override func didReceiveMemoryWarning() {
@@ -35,13 +35,6 @@ class ViewController: UIViewController {
 	}
 	
 	
-	func checkPermission(){
-		let status = CNContactStore.authorizationStatus(for: .contacts)
-		if status == .denied || status == .restricted || status == .notDetermined {
-			presentSettingsActionSheet()
-			return
-		}
-	}
 	
 	func fetch(){
 		let keysToFech = [CNContactGivenNameKey, CNContactFamilyNameKey, CNContactPhoneNumbersKey]
@@ -91,29 +84,10 @@ class ViewController: UIViewController {
 			print("\(error)")
 		}
 		
-		let vc = UIActivityViewController(activityItems: [path], applicationActivities: [])
+		let vc = UIActivityViewController(activityItems: [path!], applicationActivities: [])
 		present(vc, animated: true, completion: nil)
 	}
 	
-	func presentSettingsActionSheet() {
-		let alertView = UIAlertController(title: "Permission to contact", message: "We need your permission to do dirty work for you", preferredStyle: .alert)
-		
-		alertView.addAction(UIAlertAction(title: "Go to Setting", style: .default, handler: { (_) in
-			guard let settingsUrl = URL(string: UIApplicationOpenSettingsURLString) else {
-				return
-			}
-			UIApplication.shared.open(URL(string:"App-Prefs:root=General")!, options: [:], completionHandler: nil)
-
-//			if UIApplication.shared.canOpenURL(settingsUrl) {
-//				UIApplication.shared.open(settingsUrl, completionHandler: { (success) in
-//					print("Settings opened: \(success)") // Prints true
-//				})
-//			}
-
-		}))
-		alertView.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-		self.present(alertView, animated: true, completion: nil)
-	}
-
+	
 }
 
