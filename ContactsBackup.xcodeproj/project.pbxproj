@@ -14,7 +14,6 @@
 		2A1FDE621F21FE6B00C47C9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A1FDE601F21FE6B00C47C9A /* LaunchScreen.storyboard */; };
 		2A1FDE6D1F21FE6B00C47C9A /* ContactsBackupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1FDE6C1F21FE6B00C47C9A /* ContactsBackupTests.swift */; };
 		2A4911CB1F25BECA005D8FCC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4911CA1F25BECA005D8FCC /* HomeViewModel.swift */; };
-		2A4911CD1F25BED3005D8FCC /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4911CC1F25BED3005D8FCC /* Contact.swift */; };
 		2A4911D11F25C018005D8FCC /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A4911CF1F25C018005D8FCC /* AddressBook.framework */; };
 		2A4911D21F25C018005D8FCC /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A4911D01F25C018005D8FCC /* AddressBookUI.framework */; };
 /* End PBXBuildFile section */
@@ -41,7 +40,6 @@
 		2A1FDE6C1F21FE6B00C47C9A /* ContactsBackupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsBackupTests.swift; sourceTree = "<group>"; };
 		2A1FDE6E1F21FE6B00C47C9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A4911CA1F25BECA005D8FCC /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		2A4911CC1F25BED3005D8FCC /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		2A4911CF1F25C018005D8FCC /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		2A4911D01F25C018005D8FCC /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -95,7 +93,6 @@
 				2A1FDE601F21FE6B00C47C9A /* LaunchScreen.storyboard */,
 				2A1FDE631F21FE6B00C47C9A /* Info.plist */,
 				2A4911CA1F25BECA005D8FCC /* HomeViewModel.swift */,
-				2A4911CC1F25BED3005D8FCC /* Contact.swift */,
 			);
 			path = ContactsBackup;
 			sourceTree = "<group>";
@@ -224,7 +221,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A1FDE5A1F21FE6B00C47C9A /* ViewController.swift in Sources */,
-				2A4911CD1F25BED3005D8FCC /* Contact.swift in Sources */,
 				2A4911CB1F25BECA005D8FCC /* HomeViewModel.swift in Sources */,
 				2A1FDE581F21FE6B00C47C9A /* AppDelegate.swift in Sources */,
 			);
